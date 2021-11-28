@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      
+  
+  <h3>ToDo List</h3>
+  <script>
+      var todo=["wake up", "breakafast","study","TV","reading","study again"];
+      console.log(todo);
+      function showlist()
+      {
+          for(var i=0;i<todo.length;i++){
+              console.log(todo[i])
+          }
+      }
+       function add_new(new_item)
+       {
+           todo.push("tea");
+           console.log(todo);
+       }
+       function check()
+       {
+           todo[2]="STUDY ✔";
+           console.log(todo[2]);
+       }
+       function edit()
+       {
+            todo[2]="STUDY";
+            console.log(todo[2]);
+       }
+       function delete_item(delete_item)
+        {
+            todo.pop(delete_item);
+            console.log(todo);
+        }
+        
+  </script>
+  
+      
+  </body>
+  </html>
